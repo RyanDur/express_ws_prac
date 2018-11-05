@@ -13,11 +13,12 @@ const wss: WebSocket.Server = new WebSocket.Server({server});
 const names: string[] = ['Anna', 'Travis', 'Mendel', 'Harrison', 'Alex', 'Jordan', 'Mike', 'Krishna', 'Mohammad', 'Paulina'];
 
 wss.on('connection', (socket: WebSocket) => {
-  socket.send(JSON.stringify({connection: "ok"}));
+  wss.clients.forEach(client =>
+    client.send(JSON.stringify(names.map(createRow))));
 
   setInterval(() => {
     wss.clients.forEach(client =>
-      client.send(`{data: ${JSON.stringify(names.map(createRow))}}`));
+      client.send(JSON.stringify(names.map(createRow))));
   }, 1000);
 });
 
