@@ -10,6 +10,8 @@ interface data {
   coo: number
   cor: number
   cop: number
+  another: number
+  yet_another: number
 }
 
 const randomNumber = () => Math.floor(Math.random() * 10);
@@ -26,7 +28,9 @@ const row = (name: string): data => {
     far: randomNumber(),
     faz: randomNumber(),
     foo: randomNumber(),
-    fop: randomNumber()
+    fop: randomNumber(),
+    another: randomNumber(),
+    yet_another: randomNumber()
   }
 };
 
