@@ -1,4 +1,4 @@
-interface data {
+export interface Data {
   name: string
   foo: number
   bar: number
@@ -16,7 +16,7 @@ interface data {
 
 const randomNumber = () => Math.floor(Math.random() * 10);
 
-const row = (name: string): data => {
+const row = (name: string): Data => {
   return {
     name,
     bar: randomNumber(),
