@@ -29,7 +29,32 @@ const columns = {
   }
 };
 
-const names: string[] = ['Anna', 'Travis', 'Mendel', 'Harrison', 'Alex', 'Jordan', 'Mike', 'Krishna', 'Mohammad', 'Paulina'];
+const names: string[] = [
+  'Anna',
+  'Travis',
+  'Mendel',
+  'Harrison',
+  'Harrison',
+  'Harrison',
+  'Alex',
+  'Jordan',
+  'Jordan',
+  'Jordan',
+  'Jordan',
+  'Jordan',
+  'Mike',
+  'Mike',
+  'Krishna',
+  'Krishna',
+  'Krishna',
+  'Krishna',
+  'Mohammad',
+  'Mohammad',
+  'Mohammad',
+  'Mohammad',
+  'Mohammad',
+  'Paulina'
+];
 const rows = (data: Data[]) => ({
   data,
   rowNames: ['Anna', 'Travis', 'Mendel', 'Harrison', 'Alex', 'Jordan', 'Mike', 'Krishna', 'Mohammad', 'Paulina'],
